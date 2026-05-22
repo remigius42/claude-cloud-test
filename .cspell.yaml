@@ -1,0 +1,12 @@
+version: "0.2"
+language: "en-US"
+words:
+  - andreas
+  - commitlint
+  - remigius
+ignorePaths:
+  - .git
+  - .claude/
+dictionaries: []
+dictionaryDefinitions: []
+import: []
