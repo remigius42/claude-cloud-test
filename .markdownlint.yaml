@@ -15,3 +15,6 @@ MD033:  # Inline HTML
     - br
 
 MD041: false  # First line in file should be a top level heading - disable for flexibility
+
+MD060:  # Table column style
+  style: compact

@@ -36,10 +36,10 @@ select a GitHub repo, which is required to run any routine.
 Routines use `SLACK_POST_URL` for notifications — set this in your environment
 or `.env` file before running.
 
-| Routine                                                | What it does                                                      |
-| ------------------------------------------------------ | ----------------------------------------------------------------- |
-| [price-check](./routines/price-check/)                 | Tracks Raspberry Pi 5 prices and predicts short-term price trends |
-| [security-news-check](./routines/security-news-check/) | Monitors CVEs and security incidents across a set of topics       |
+| Routine | What it does |
+| -- | -- |
+| [price-check](./routines/price-check/) | Tracks Raspberry Pi 5 prices and predicts short-term price trends |
+| [security-news-check](./routines/security-news-check/) | Monitors CVEs and security incidents across a set of topics |
 
 ## Engagement
 
