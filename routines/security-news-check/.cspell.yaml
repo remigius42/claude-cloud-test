@@ -1,0 +1,9 @@
+import:
+  - ../../.cspell.yaml
+words:
+  - openclaw
+  - openspec
+ignorePaths:
+  - security-issues.md
+  - security-issues-handled.md
+  - security-issues-ignored.md
