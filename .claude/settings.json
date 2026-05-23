@@ -3,5 +3,17 @@
     "allow": [
       "WebSearch"
     ]
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "[ \"$CLAUDE_CODE_REMOTE\" = \"true\" ] && pre-commit install || true"
+          }
+        ]
+      }
+    ]
   }
 }

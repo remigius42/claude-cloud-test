@@ -30,10 +30,21 @@ Claude Code and execute it. To schedule it, wire it up as a [Claude Code
 Routine](https://claude.ai/code/routines) via
 the Claude Code web UI.
 
-**Prerequisite:** in Claude Code Web, enable the
-GitHub Integration [Connector](https://claude.ai/customize/connectors) before
-setting up the cloud environment — without it, you won't be able to select a
-GitHub repo, which is required to run any routine.
+**Prerequisites:**
+
+1. Enable the GitHub Integration [Connector](https://claude.ai/customize/connectors)
+   before setting up the cloud environment — without it, you won't be able to
+   select a GitHub repo.
+
+1. In the cloud environment's setup script, add:
+
+   ```bash
+   #!/bin/bash
+   pip install pre-commit
+   ```
+
+   This is cached after the first run. The repo's `SessionStart` hook then runs
+   `pre-commit install` each session to wire up git hooks in the fresh clone.
 
 Routines use `SLACK_POST_URL` for notifications — set this in your environment
 or `.env` file before running.
