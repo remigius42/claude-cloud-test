@@ -26,12 +26,14 @@ background.
 
 Each routine lives in `routines/<name>/` and contains a `prompt.md` with
 self-contained instructions. To run a routine manually, open the prompt in
-Claude Code and execute it. To schedule it, wire it up as a Claude Routine via
+Claude Code and execute it. To schedule it, wire it up as a [Claude Code
+Routine](https://claude.ai/code/routines) via
 the Claude Code web UI.
 
-**Prerequisite:** in Claude Code Web, enable the GitHub Integration Connector
-before setting up the cloud environment — without it, you won't be able to
-select a GitHub repo, which is required to run any routine.
+**Prerequisite:** in Claude Code Web, enable the
+GitHub Integration [Connector](https://claude.ai/customize/connectors) before
+setting up the cloud environment — without it, you won't be able to select a
+GitHub repo, which is required to run any routine.
 
 Routines use `SLACK_POST_URL` for notifications — set this in your environment
 or `.env` file before running.
