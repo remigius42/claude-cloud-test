@@ -49,6 +49,17 @@ the Claude Code web UI.
 Routines use `SLACK_POST_URL` for notifications — set this in your environment
 or `.env` file before running.
 
+### Merge mechanics
+
+Claude Code web runs each session on a fresh branch (`claude/*`) and routes
+git pushes through a GitHub proxy that [restricts pushes to the session
+branch](https://code.claude.com/docs/en/claude-code-on-the-web#github-proxy)
+— direct pushes to `main` are blocked by design. Claude therefore opens a PR
+after committing. The
+[auto-merge-claude](.github/workflows/auto-merge-claude.yml) workflow picks
+up any PR from a `claude/**` branch, rebases it onto `main`, and deletes the
+branch automatically.
+
 | Routine | What it does |
 | -- | -- |
 | [price-check](./routines/price-check/) | Tracks Raspberry Pi 5 prices and predicts short-term price trends |
