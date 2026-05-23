@@ -4,6 +4,7 @@ words:
   - andreas
   - commitlint
   - remigius
+  - virtualenv
 ignorePaths:
   - .git
   - .claude/
