@@ -1,5 +1,7 @@
 import:
   - ../../.cspell.yaml
+ignorePaths:
+  - output.md
 words:
   - galaxus
   - toppreise

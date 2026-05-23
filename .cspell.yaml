@@ -7,6 +7,7 @@ words:
 ignorePaths:
   - .git
   - .claude/
+  - "**/.cspell.yaml"
 dictionaries: []
 dictionaryDefinitions: []
 import: []
