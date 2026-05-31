@@ -20,3 +20,8 @@
 | 2026-05-25 | 2026-01-06 | Node.js / npm | [AdonisJS @bodyparser path traversal → arbitrary file write → RCE](https://thehackernews.com/2026/01/critical-adonisjs-bodyparser-flaw-cvss.html) | [CVE-2026-21440](https://nvd.nist.gov/vuln/detail/CVE-2026-21440) | 9.2 | upgrade @adonisjs/bodyparser to 10.1.2+ or 11.0.0-next.6+ | <https://thehackernews.com/2026/01/critical-adonisjs-bodyparser-flaw-cvss.html>, <https://securityonline.info/cve-2026-21440-new-adonisjs-9-2-critical-flaw-allows-arbitrary-file-writes-and-rce/> |
 | 2026-05-25 | 2026-03-31 | Node.js / npm | [Axios npm supply chain attack by Sapphire Sleet (North Korea) — malicious axios 1.14.1/0.30.4 installs cross-platform RAT](https://www.microsoft.com/en-us/security/blog/2026/04/01/mitigating-the-axios-npm-supply-chain-compromise/) | n/a | n/a (Critical) | pin axios to ≤1.14.0 / ≤0.30.3; audit npm installs for compromise | <https://www.microsoft.com/en-us/security/blog/2026/04/01/mitigating-the-axios-npm-supply-chain-compromise/>, <https://snyk.io/blog/axios-npm-package-compromised-supply-chain-attack-delivers-cross-platform/> |
 | 2026-05-25 | 2026-05-07 | Node.js / npm | [vm2 sandbox escape via host Object access → arbitrary RCE (CVSS 10.0; part of 13-CVE batch)](https://thehackernews.com/2026/05/vm2-nodejs-library-vulnerabilities.html) | [CVE-2026-43997](https://nvd.nist.gov/vuln/detail/CVE-2026-43997) | 10.0 | upgrade vm2 to 3.11.0+ | <https://thehackernews.com/2026/05/vm2-nodejs-library-vulnerabilities.html>, <https://www.thehackerwire.com/critical-vm2-sandbox-escape-host-object-access-cve-2026-43997/> |
+
+## Handled automatically
+
+| handled | added | reported | topic | issue | CVE | CVE score | mitigation | sources | comment |
+| -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |

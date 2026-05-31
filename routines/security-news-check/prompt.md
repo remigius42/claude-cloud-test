@@ -12,6 +12,11 @@
 - Don't add issues which are already in the
   - [handled issues](./security-issues-handled.md)
   - [ignored issues](./security-issues-ignored.md)
+- Before adding a new issue, check if it is implicitly covered by a
+  `security-issues-handled.md` entry (e.g. applied patch level ≥ required, or
+  installed version ≥ required). If so, add it to the **"Handled automatically"**
+  table in `security-issues.md` with a `comment` naming the covering entry,
+  instead of the main table.
 - Only write to [security-issues.md](./security-issues.md) — the handled and
   ignored files are maintained by the user
 
