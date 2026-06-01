@@ -26,6 +26,7 @@
    web searches to predict the price development over the next week, month and
    6 months. Add a row each to [output.md - future](./output.md#future)
    - `horizon`: the time frame, e.g. week, month, 6 months
+1. Commit using the `/commit` skill, then open a PR against `main`
 1. Send a notification per [§ Notification](#notification)
 
 ## Notification

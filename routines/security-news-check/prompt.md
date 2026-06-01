@@ -49,6 +49,7 @@
    - TLS / SSL
 1. Add a row each to [security-issues.md](./security-issues.md) respecting the
    [§ Rules](#rules).
+1. Commit using the `/commit` skill, then open a PR against `main`
 1. Send a notification if there are new critical security issues, per [§
    Notification](#notification)
 
